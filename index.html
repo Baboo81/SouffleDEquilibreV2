@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Sylvie Raquet thérapeute en sophrologie à Braine l'Alleud, Sylvie vous proposera différentes méthodes basées sur la méditation, la visualisation et la respiration afin que vous puissiez retrouver harmonie et Bien-être. Souffle d'équilibre vous proposera un cadre serein et chaleureux.">
+        <meta name="keywords" content="Thérapeute en sophrologie, la sophrologie permet d'aider à accepter ses émotions, à gérer son stress et la douleur mais aussi de retrouver confiance en soi ...">
+        <!-- Leaflet CSS-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+		crossorigin="" />
+        <!-- Library CSS-->
+        <link rel="stylesheet" href="./asset/style/libraries/bootstrap.min.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="./asset/style/reset.css">
+        <link rel="stylesheet" href="./asset/style/style.css">
+        <!--Library Leaflet JS-->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+        <!-- Library -->
+        <script src="./asset/script/libraries/bootstrap.js" defer></script>
+        <script src="./asset/script/libraries/jQuery.js" defer></script>
+        <script src="./asset/script/main.js" defer></script>
+        <title>Souffle d'équilibre, thérapeute en sophrologie</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg fixed-top">
+                        <div class="container-fluid justify-content-center">
+                            <img src="./asset/img/svg/LogoBis.gif" alt="Logo du site" class="logo mx-5">
+                            <button class="navbar-toggler mx-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item mx-5">
+                                        <a class="nav-link" aria-current="page" href="#quiSuisJe">Qui suis-je ?</a>
+                                    </li>
+                                    <li class="nav-item mx-5">
+                                        <a class="nav-link" href="#quEstCeQueCest">Qu'est-ce que la <strong>sophrologie</strong> ?</a>
+                                    </li>
+                                    <li class="nav-item mx-5">
+                                        <a class="nav-link" href="#contact">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section class="home">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-xl-6">
+                            <div class="homeTitlesSection">
+                                <div class="homeTitle">
+                                    <h1><span class="bigLetter">S</span><i>ouffle</i></h1>
+                                    <h3 class="homeTitleD p-2">d'</h3>
+                                </div>
+                                <div class="homeTitle2">
+                                    <h1><span class="bigLetter">É</span><i>quilibre</i></h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-6">
+                            <div class="homeContent">
+                                <p class="text-center">
+                                    Acceptation des émotions<br />Gestion du stress<br />Bien-être et relaxation<br />Harmonie avec soi et les autres<br />Gestion de la douleur</H1>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mainContent">
+            <div class="container">
+                <div class="row">
+                    <a id="quEstCeQueCest" href="La sophrologie qu'est-ce que c'est ?"></a><!-- Anchor -->
+                    <h1 class="p-5 my-5 text-center mainContentTitle">Envie de découvrir la <strong>sophrologie</strong> ?</h1>
+                    <div class="col-md-6 blob1Content">
+                        <div class="my-5">
+                            <div class="txtContentBlob1">
+                                <div class="mb-5">
+                                    <h5 class="mb-3 text-center fs-3">La <strong>sophrologie</strong> c'est quoi ?</h5>
+                                    <p class="blueFont sizeFont text-center">C'est une invitation à prendre un temps pour soi<br />avec des mouvements doux, des techniques<br />respiratoires et des visualisations.</p>
+                                </div>
+                                <div>
+                                    <h5 class="mb-3 text-center fs-3">La <strong>sophrologie</strong>, qu'est-ce que ça apporte ?</h5>
+                                    <p class="blueFont sizeFont text-center">Elle permet de gérer son <strong>stress</strong>, mieux se<br />connaître, développer sa<strong>confiance en soi </strong> et en<br />ses capacités, renforcer son mieux être ...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 g-5">
+                        <div class="lotusContent">
+                            <img src="./asset/img/svg/Lotus.svg" alt="Image représentant un lotus mauve avec en son centre un yogi">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <a id="quiSuisJe" href="Qui suis-je"></a><!-- Anchor -->
+                    <div class="col-md-6 g-5">
+                        <div class="plumeContent">
+                            <img src="./asset/img/svg/Plume.svg" alt="Image représentant une plume">
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-5 blob2Content">
+                        <div class="txtContentBlob2">
+                            <div class="mb-5">
+                                <h5 class="mb-3 text-center fs-3">Qui vous accompagne ?</h5>
+                                <p class="blueFont sizeFont mb-3 text-center">Je m'appelle Sylvie, je suis aujourd'hui<br />sophrologue diplômée après 3 années<br />de formation en Harmonie<br />vitale par la sophrologie à l'EAFC Rixensart.<br />J'ai suivi une formation certifiante sur<br />l'accompagnement des hyper à l'hyperacademy.<br /></p>
+                                <p class="blueFont sizeFont text-center">Dans ce monde trépidant, il est si facile de s'égarer,<br /> de perdre de vue ce qui compte vraiment.<br />J'ai entrepris ces formations fascinantes<br />qui m'ont appris l'importance de prendre soin de<br />moi, de m'accorder le<br />temps nécessaire pour me recentrer. Ce chemin<br />de découverte de soi est une aventure<br />passionnante ...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a id="contact" href="Contact"></a><!-- Anchor -->
+        <footer class="container-fluid text-center text-lg-start py-5">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-4">
+                        <ul class="nav flex-column">
+                            <h4 class="p-3">Adresse</h4>
+                            <p class="txtFooter sizeFont">Rue de la légère eau, 33</p>
+                            <p class="blueFont sizeFont">Braine l'Alleud</p>
+                            <div class="p-3">
+                                <div id="mapid" class="container-fluid"></div>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="nav flex-column">
+                            <h4 class="p-3">Contactez-moi</h4>
+                            <p class="txtFooter sizeFont">Par téléphone, sms ou whatsapp<br />au<br />0476/67.41.88</p>
+                            <p class="txtFooter my-3">Ou par mail</p>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mailto:"><img class="picto" src="./asset/img/svg/footer/email.svg" alt="Picto représentant une enveloppe"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="nav flex-column">
+                            <h4 class="p-3">Réseaux</h4>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img class="pictoFacebook" src="./asset/img/svg/footer/facebook.svg" alt="Picto représentant le logo facebook"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img class="picto" src="./asset/img/svg/footer/instagram.svg" alt="Picto représentant le logo instagram"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a class="webMasterLink" href="mailto:chrisrodriguez@hotmail.be"><p class="text-center blueFont fw-bolder mt-2">&copy; Chris Rodriguez Perez - 2025</p></a>
+                    </div>
+                </div>
+            </div>
+       </footer>
+    </body>
+</html>
