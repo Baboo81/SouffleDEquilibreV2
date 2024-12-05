@@ -14,6 +14,7 @@ body
 {
     font-family: "Bodoni Moda", serif;
     overflow-x: hidden;
+    background-color: var(--Pink);
 }
 
 .blueFont
@@ -23,8 +24,8 @@ body
 
 .sizeFont
 {
-    font-size: 1rem;
-    line-height: 1.2rem;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
 }
 
 /* Header */
@@ -102,6 +103,13 @@ header
     line-height: 1.5em;
 }
 
+.home .logoHome
+{
+    position: absolute;
+    top: 31%;
+    right: 65%;
+}
+
 .home .homeTitlesSection
 {
     position: absolute;
@@ -148,7 +156,7 @@ i
     font-size: 4rem;
 }
 
-h5
+h1
 {
     color: var(--Blue);
 }
@@ -186,6 +194,19 @@ h5
     height: 550px;
 }
 
+.lotusContent
+{
+    position: relative;
+}
+
+/*.lotusImg
+{
+    position: absolute;
+    top: 90%;
+    right: 50%;
+    z-index: 999;
+}*/
+
 /* END mainContent section */
 
 /* Footer */
@@ -193,7 +214,7 @@ h5
 footer
 {
     height: 450px;
-    background-color: var(--White);
+    background-color: var(--Violet);
 }
 
 h4
