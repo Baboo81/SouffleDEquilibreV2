@@ -108,7 +108,7 @@ header
     line-height: 1.5em;
 }
 
-.home .logoHome
+.home .LogoBisHome
 {
     position: absolute;
     top: 31%;
@@ -266,11 +266,24 @@ footer .webMasterLink
 /*  END Global  */
 
 /*  logoHome  */
-@media only screen and (min-width : 1099px) and (width : 900px)
+@media only screen and (min-width : 500px) and (width : 800px)
 {
-    .logoHome
+    .home .LogoBisHome
     {
-        
+        position: absolute;
+        top: 31%;
+        right: 28%;
+    }
+    
+}
+
+@media only screen and (min-width : 801px) and (width : 1099px)
+{
+    .home .LogoBisHome
+    {
+        position: absolute;
+        top: 31%;
+        right: 28%;
     }
     
 }
