@@ -266,7 +266,7 @@ footer .webMasterLink
 /*  END Global  */
 
 /*  logoHome  */
-@media only screen and (min-width : 500px) and (width : 800px)
+@media only screen and (min-width : 500px) and (max-width : 800px)
 {
     .home .LogoBisHome
     {
@@ -277,7 +277,7 @@ footer .webMasterLink
     
 }
 
-@media only screen and (min-width : 801px) and (width : 1099px)
+@media only screen and (min-width : 801px) and (max-width : 1099px)
 {
     .home .LogoBisHome
     {
