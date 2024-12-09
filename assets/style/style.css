@@ -110,9 +110,15 @@ header
 
 .home .LogoBisHome
 {
+    height: 34em;
+    width: 34em;
+}
+
+.home .LogoBisHome
+{
     position: absolute;
-    top: 31%;
-    right: 65%;
+    top: 21%;
+    right: 55%;
 }
 
 /* Section : mainContent */
