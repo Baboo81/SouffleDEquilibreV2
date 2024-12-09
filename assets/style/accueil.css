@@ -119,7 +119,7 @@ header
 
 .mainContent
 {
-    height: 2000px;
+    height: 1000px;
     margin-top: 10%;
 }
 
@@ -198,6 +198,15 @@ footer .webMasterLink
 /*Media Queries*/
 
 /*  Global  */
+@media only screen and (min-width : 992px) and (max-width : 1104px)
+{
+    .nav-link
+    {
+        padding: 30px;
+        font-size: 1.2em;
+    }
+}
+
 @media only screen and (min-width : 1100px) and (max-width : 1416px)
 {
     .homeContent
@@ -210,20 +219,19 @@ footer .webMasterLink
         height: 2500px;
     }
 
-    .lotusContent
+}
+
+@media only screen and (min-width : 800px) and (max-width : 1099px)
+{
+   
+    .home .homeContent
     {
-        width: 100%;
-        height: 100%;
-        margin-left: 55%;
+        margin-top: 50%;
+        margin-right: 10%;
     }
 
-    .plumeContent
-    {
-        width: 100%;
-        height: 100%;
-        margin-left: 55%;
-    }
 }
+
 
 @media only  screen and  (min-width : 768px) and (max-width : 1416px)
 {
