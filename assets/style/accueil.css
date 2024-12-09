@@ -116,11 +116,6 @@ header
 }
 
 /* Section : mainContent */
-.mainContent .logoMixed
-{
-    height: 40em;
-    width: 40em;
-}
 
 .mainContent
 {
@@ -128,9 +123,10 @@ header
     margin-top: 10%;
 }
 
-.mainContent .bloc2
+.mainContent .bloc1
 {
-    margin-top: 20% !important;
+    height: 100%;
+    height: 100%;
 }
 
 .mainContent .card
@@ -138,16 +134,9 @@ header
     background-color: var(--Pink);
 }
 
-.mainContent .lotusContent
+.mainContent .accueilTitle
 {
-    width: 100%;
-    height: 100%;
-}
-
-.mainContent .plumeContent
-{
-    width: 100%;
-    height: 100%;
+    color: var(--Blue);
 }
 
 /* Footer */
