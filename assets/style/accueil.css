@@ -45,7 +45,7 @@ header
 .nav-link
 {
     padding: 30px;
-    color: var(--White);
+    color: var(--Blue);
     font-size: 1.5em;
 }
 
@@ -62,13 +62,7 @@ header
 
 .nav-link:hover
 {
-    color: var(--Blue);
-}
-
-.logo
-{
-    height: 5rem;
-    width: 5rem;
+    color: var(--Violet);
 }
 
 .sticky
@@ -122,6 +116,12 @@ header
 }
 
 /* Section : mainContent */
+.mainContent .logoMixed
+{
+    height: 40em;
+    width: 40em;
+}
+
 .mainContent
 {
     height: 2000px;
