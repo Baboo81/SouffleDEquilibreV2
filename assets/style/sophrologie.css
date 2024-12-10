@@ -247,6 +247,22 @@ footer .webMasterLink
     }
 }
 
+@media only screen and (min-width : 300px) and (max-width : 599px)
+{
+    .mainContent
+    {
+        height: 1000px;
+    }
+
+    .plumeImg
+    {
+        width: 30em !important;
+        height: 30em !important;
+        margin-top: 20%;
+        margin-left: 0% !important;
+    }
+}
+
 @media only screen and (min-width : 900px) and (max-width : 1099px)
 {
     .homeContent

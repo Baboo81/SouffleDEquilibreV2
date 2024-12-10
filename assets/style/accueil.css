@@ -307,29 +307,6 @@ footer .webMasterLink
 
 /*  END Global  */
 
-/*  logoHome  */
-@media only screen and (min-width : 500px) and (max-width : 800px)
-{
-    .home .LogoBisHome
-    {
-        position: absolute;
-        top: 31%;
-        right: 28%;
-    }
-    
-}
-
-@media only screen and (min-width : 801px) and (max-width : 1099px)
-{
-    .home .LogoBisHome
-    {
-        position: absolute;
-        top: 31%;
-        right: 28%;
-    }
-    
-}
-
 /*  Home  */
 @media only screen and (min-width : 950px) and (max-width : 1099px)
 {
@@ -373,12 +350,18 @@ footer .webMasterLink
     }
 }
 
-@media only screen and (min-width : 0px) and (max-width : 500px)
+@media only screen and (min-width : 100px) and (max-width : 549px)
 {
+    .home .logoHome
+    {
+        margin-right: -75%;
+        margin-top: -30%;
+    }
+
     .homeContent
     {
        margin-top: 75%;
-       margin-right: -10%;
+       margin-right: -22%;
     }
 }
 /*  END  Home  */
