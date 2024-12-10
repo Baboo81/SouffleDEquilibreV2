@@ -108,7 +108,7 @@ header
     width: 34em;
 }
 
-.home .LogoBisHome
+.home .logoHome
 {
     position: absolute;
     top: 21%;
@@ -223,70 +223,48 @@ footer .webMasterLink
 
 @media only screen and (min-width : 800px) and (max-width : 1099px)
 {
+    .home .logoHome
+    {
+        margin-right: -30%;
+    }
    
     .home .homeContent
     {
         margin-top: 50%;
         margin-right: 10%;
     }
-
 }
 
-
-@media only  screen and  (min-width : 768px) and (max-width : 1416px)
+@media only screen and (min-width : 725px) and (max-width : 800px)
 {
-    .mainContent
+    .home .logoHome
     {
-        height: 3500px;
+        margin-right: -40%;
+        margin-top: -15%;
     }
-
-    .bloc1
+   
+    .home .homeContent
     {
-        flex-direction: column !important;
-        margin-left: 25%;
-        width: 100% !important;
-    }
-
-    .bloc2
-    {
-        flex-direction: column !important;
-        margin-left: 25%;
-        width: 100% !important;
-    }
-
-    .lotusContent
-    {
-        width: 100% !important;
-        height: 100% !important;
-        margin-left: 5% !important;
-    }
-
-    .plumeContent
-    {
-        width: 100% !important;
-        height: 100% !important;
-        margin-left: 5% !important;
-        margin-top: -20% !important;
+        margin-top: 60%;
+        margin-right: 0%;
     }
 }
 
-@media only screen and (min-width :800px) and (max-width : 1100px)
+@media only screen and (min-width : 550px) and (max-width : 725px)
 {
-
-    .lotusContent
+    .home .logoHome
     {
-        width: 100%;
-        height: 100%;
-        margin-left: 55%;
+        margin-right: -56%;
+        margin-top: -15%;
     }
-
-    .plumeContent
+   
+    .home .homeContent
     {
-        width: 100%;
-        height: 100%;
-        margin-left: 55%;
+        margin-top: 70%;
+        margin-right: -10%;
     }
 }
+
 
 @media only screen and (min-width : 500px) and (max-width : 800px)
 {
@@ -298,25 +276,6 @@ footer .webMasterLink
     .mainContent
     {
         height: 2500px;
-    }
-
-    .lotusContent
-    {
-        width: 100%;
-        height: 100%;
-        margin-left: 10%;
-    }
-
-    .plumeContent
-    {
-        width: 100%;
-        height: 100%;
-        margin-left: 10%;
-    }
-
-    footer
-    {
-        height: 1200px;
     }
 }
 
@@ -410,3 +369,21 @@ footer .webMasterLink
     }
 }
 /*  END  Home  */
+
+/* Footer */
+
+@media only screen and (min-width : 500px) and (max-width : 600px)
+{
+    footer
+    {
+        height: 1100px;
+    }
+}
+
+@media only screen and (min-width : 601px) and (max-width : 800px)
+{
+    footer
+    {
+        height: 1100px;
+    }
+}
