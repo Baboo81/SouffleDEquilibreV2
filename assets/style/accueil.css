@@ -68,7 +68,7 @@ header
 .sticky
 {
     background-color: #000;
-    opacity: 50%;
+    opacity: 80%;
 }
 /* END Header */
 
@@ -204,6 +204,19 @@ footer .webMasterLink
     {
         padding: 30px;
         font-size: 1.2em;
+    }
+}
+
+@media only screen and (min-width : 300px) and (max-width : 991px)
+{
+    .navbar-collapse    {
+        background-color: black;
+        opacity: 80%;
+    }
+
+    .nav-link
+    {
+        color: var(--White);
     }
 }
 
