@@ -10,11 +10,17 @@
     --White : #FEF8F2;
 }
 
-body
+html, body
 {
+    max-width: 100%;
     font-family: "Bodoni Moda", serif;
     overflow-x: hidden;
     background-color: var(--Pink);
+}
+
+*
+{
+    box-sizing: border-box;
 }
 
 h1

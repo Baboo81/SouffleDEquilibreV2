@@ -7,14 +7,21 @@
     --Violet : #C3BED0;
     --Grey : #D1D3E4;
     --Pink : #F2E6E9;
-    --White : #FEF8F2;
+    --Beige : #F0EAD6;
+
 }
 
-body
+html, body
 {
+    max-width: 100%;
     font-family: "Bodoni Moda", serif;
     overflow-x: hidden;
     background-color: var(--Pink);
+}
+
+*
+{
+    box-sizing: border-box;
 }
 
 h1
@@ -45,7 +52,7 @@ header
 .nav-link
 {
     padding: 30px;
-    color: var(--Blue);
+    color: var(--Beige);
     font-size: 1.5em;
 }
 
@@ -62,7 +69,7 @@ header
 
 .nav-link:hover
 {
-    color: var(--Violet);
+    color: black;
 }
 
 .sticky
@@ -98,8 +105,14 @@ header
     top: 30%;
     right: 20%;
     font-size: 2em;
-    color: var(--White);
-    line-height: 1.5em;
+    color: var(--Beige);
+    line-height: 1.7em;
+}
+
+.blocHome
+{
+    align-items: center;
+    gap: 1rem;
 }
 
 .home .LogoBisHome
@@ -111,8 +124,14 @@ header
 .home .logoHome
 {
     position: absolute;
-    top: 21%;
-    right: 55%;
+    top: 17%;
+    right: 65%;
+}
+
+.logoHome img 
+{
+    max-width: 100%;
+    height: auto;
 }
 
 /* Section : mainContent */
