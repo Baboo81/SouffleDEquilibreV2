@@ -4,6 +4,7 @@
 :root
 {
     --Blue : #464E9F;
+    --Blue2 : #2362B0;
     --Violet : #C3BED0;
     --Grey : #D1D3E4;
     --Pink : #F2E6E9;
@@ -25,13 +26,23 @@ html, body
 
 h1
 {
+    color: var(--Blue2);
     font-size: 3em;
+    font-weight: 100;
 }
 
 .blueFontP
 {
     color: var(--Blue);
     font-size: 1.5em;
+    line-height: 1.6em;
+}
+
+.blueFontPBold
+{
+    color: var(--Blue);
+    font-size: 1.5em;
+    font-weight: bold;
     line-height: 1.6em;
 }
 
@@ -84,11 +95,6 @@ header
 {
     height: 2000px;
     margin-top: 10%;
-}
-
-.mainContent .bloc2
-{
-    margin-top: 20% !important;
 }
 
 .mainContent .card
