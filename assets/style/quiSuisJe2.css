@@ -85,22 +85,30 @@ header
 /* END Header */
 
 
-.mainContent .logoMixed
-{
-    height: 40em;
-    width: 40em;
-}
-
+/* Section : mainContent */
 .mainContent
 {
     height: 2000px;
     margin-top: 10%;
 }
 
-.mainContent .card
+.mainContent .lotusContent
 {
-    background-color: var(--Pink);
+    display: flex;
+    justify-content: center; /*Centrage horizontal*/
+    align-items: center; /*Centrage vertical*/
+    height: 100%; /*Remplissage du container*/
 }
+
+.Mixed
+{
+    max-width: 100%; /*Rend l'image responsive*/
+    height: auto; /*Conservation des proportions*/
+    margin: 0 auto; /*Centrer le svg ds son container*/
+    padding: 10px;
+}
+/* Section : mainContent END */
+
 
 /* Footer */
 
@@ -162,282 +170,16 @@ footer .webMasterLink
 /*Media Queries*/
 
 /*  Global  */
-@media only screen and (min-width : 0px) and (max-width : 1199px)
+@media (max-width : 768px)
 {
-    h1
+    .Mixed 
     {
-        font-size: 2.2em;
-    }
-}
-
-@media only screen and (min-width : 992px) and (max-width : 1104px)
-{
-    .nav-link
-    {
-        padding: 30px;
-        font-size: 1.2em;
-    }
-}
-
-@media only screen and (min-width : 300px) and (max-width : 991px)
-{
-    .navbar-collapse    {
-        background-color: black;
-        opacity: 80%;
-    }
-
-    .nav-link
-    {
-        color: var(--White);
-    }
-}
-
-@media only screen and (min-width : 1100px) and (max-width : 1416px)
-{
-    .mainContent
-    {
-        height: 1500px;
-    }
-}
-
-@media only  screen and  (min-width : 768px) and (max-width : 1416px)
-{
-    .mainContent
-    {
-        height: 1800px;
-    }
-
-    .bloc1
-    {
-        flex-direction: column !important;
-        margin-left: 25%;
-        width: 100% !important;
-    }
-}
-
-@media only screen and (min-width : 1400px) and (max-width : 1416px)
-{
-
-    .lotusContent
-    {
-        width: 100%;
-        height: 100%;
-        margin-left: -8%;
-    }
-}
-
-@media only screen and (min-width : 1300px) and (max-width : 1399px)
-{
-
-    .lotusContent
-    {
-        width: 100%;
-        height: 100%;
-        margin-left: -19%;
-    }
-}
-
-@media only screen and (min-width : 1200px) and (max-width : 1299px)
-{
-
-    .lotusContent
-    {
-        width: 100%;
-        height: 100%;
-        margin-left: -19%;
-    }
-}
-
-@media only screen and (min-width : 1099px) and (max-width : 1199px)
-{
-
-    .lotusContent
-    {
-        width: 100%;
-        height: 100%;
-        margin-left: -30%;
-        height: 10em;
-        width: 10em;
-    }
-}
-
-@media only screen and (min-width : 992px) and (max-width : 1098px)
-{
-
-    .lotusContent
-    {
-        width: 100%;
-        height: 100%;
-        margin-left: -30%;
-        height: 10em;
-        width: 10em;
-    }
-}
-
-@media only screen and (min-width : 768px) and (max-width : 991px)
-{
-    .mainContent
-    {
-        height: 2200px;
+        max-width: 80%;
     }
 
     .lotusContent
     {
-        width: 100%;
-        height: 100%;
-        margin-left: -55%;
-    }
-}
-
-@media only screen and (min-width : 750px) and (max-width : 767px)
-{
-    .mainContent
-    {
-        height: 2000px;
-    }
-
-    .lotusContent
-    {
-        width: 100%;
-        height: 100%;
-        margin-left: -17%;
-    }
-
-    footer
-    {
-        height: 1200px;
-    }
-}
-
-@media only screen and (min-width : 700px) and (max-width : 766px)
-{
-    .mainContent
-    {
-        height: 2000px;
-    }
-
-    .lotusContent
-    {
-        width: 100%;
-        height: 100%;
-        margin-left: -17%;
-    }
-
-    footer
-    {
-        height: 1200px;
-    }
-}
-
-@media only screen and (min-width : 540px) and (max-width : 699px)
-{
-    .mainContent
-    {
-        height: 2000px;
-    }
-
-    .lotusContent
-    {
-        width: 100%;
-        height: 100%;
-        margin-left: -53%;
-    }
-
-    .lotusContent .Mixed
-    {
-        display: none;
-    }
-
-    .lotusContent .MixedSmall
-    {
-        display: block;
-        height: 40em;
-        width: 65em;
-    }
-
-    footer
-    {
-        height: 1200px;
-    }
-}
-
-@media only screen and (min-width : 490px) and (max-width : 539px)
-{
-    .mainContent
-    {
-        height: 2000px;
-    }
-
-    .lotusContent
-    {
-        width: 100%;
-        height: 100%;
-        margin-left: -63%;
-    }
-
-    .lotusContent .Mixed
-    {
-        display: none;
-    }
-
-    .lotusContent .MixedSmall
-    {
-        display: block;
-        height: 40em;
-        width: 65em;
-    }
-
-    footer
-    {
-        height: 1200px;
-    }
-}
-
-@media only screen and (min-width : 300px) and (max-width : 489px)
-{
-    .mainContent
-    {
-        height: 2000px;
-    }
-
-    .lotusContent
-    {
-        width: 100%;
-        height: 100%;
-        margin-left: -90%;
-    }
-
-    .lotusContent .Mixed
-    {
-        display: none;
-    }
-
-    .lotusContent .MixedSmall
-    {
-        display: block;
-        height: 40em;
-        width: 65em;
-    }
-
-    footer
-    {
-        height: 1200px;
-    }
-}
-
-@media only screen and (min-width : 0px) and (max-width : 538px)
-{
-    .lotusContent .Mixed
-    {
-        display: none;
-    }
-}
-
-@media only screen and (min-width : 698px) and (max-width : 5000px)
-{
-    .lotusContent .MixedSmall
-    {
-        display: none;
+        margin-top: 20px;
     }
 }
 /*  END Global  */
