@@ -88,7 +88,7 @@ header
 /* Section : mainContent */
 .mainContent
 {
-    height: 2000px;
+    height: 3000px;
     margin-top: 10%;
 }
 
@@ -213,6 +213,14 @@ footer .webMasterLink
     .lotusContent
     {
         margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width : 0px) and (max-width : 768px)
+{
+    footer
+    {
+        height: 1100px;
     }
 }
 /*  END Global  */

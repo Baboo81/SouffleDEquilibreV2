@@ -86,7 +86,7 @@ header
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, .3);
+    background: rgba(0, 0, 0, .2);
 }
 
 /* Home section */
@@ -101,9 +101,10 @@ header
 
 .home .homeContent
 {
-    position: absolute;
-    top: 30%;
-    right: 20%;
+    display: flex;
+    margin-top: 10%;
+    justify-content: center;
+    justify-items: center;
     font-size: 2em;
     color: var(--Beige);
     line-height: 1.7em;
@@ -111,7 +112,12 @@ header
 
 .blocHome
 {
+    display: flex;
+    margin-top: 10%;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 1rem;
 }
 
@@ -121,12 +127,6 @@ header
     width: 34em;
 }
 
-.home .logoHome
-{
-    position: absolute;
-    top: 17%;
-    right: 65%;
-}
 
 .logoHome img 
 {
@@ -135,23 +135,6 @@ header
 }
 
 /* Section : mainContent */
-
-.mainContent
-{
-    height: 1000px;
-    margin-top: 10%;
-}
-
-.mainContent .bloc1
-{
-    height: 100%;
-    height: 100%;
-}
-
-.mainContent .card
-{
-    background-color: var(--Pink);
-}
 
 .mainContent .accueilTitle
 {
@@ -240,15 +223,26 @@ footer .webMasterLink
 }
 
 /* Home */
+@media (max-width: 768px) {
+    .blocHome {
+        flex-direction: column; /* Passe les éléments en colonne */
+        text-align: center; /* Centre le texte */
+    }
 
+    .logoHome {
+        margin-right: 0; /* Supprime l'espacement latéral */
+        margin-bottom: 20px; /* Ajoute un espacement vertical entre le logo et le texte */
+    }
+}
 /*  END  Home  */
 
 /* Footer */
 
-@media only screen and (min-width : 500px) and (max-width : 800px)
+@media only screen and (min-width : 0px) and (max-width : 800px)
 {
     footer
     {
         height: 1100px;
     }
 }
+
