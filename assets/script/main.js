@@ -13,6 +13,38 @@ $(window).scroll(function(){
         $("nav").removeClass('sticky');
     }
 });
+//////////////////  END   /////////////////////////
+
+// Variables pour l'animation
+const diplome = document.getElementById("diplome");
+let startTime; // Temps de départ de l'animation
+
+// Fonction d'animation avec rebond constant et continu
+function bounceAnimation(timestamp) {
+    if (!startTime) startTime = timestamp; // Enregistrer le temps de départ
+
+    // Calcul de la durée écoulée
+    const elapsedTime = timestamp - startTime;
+
+    // Paramètres de l'animation
+    const bounceHeight = 50; // Hauteur constante du rebond (en pixels)
+    const duration = 5000; // Durée d'un cycle complet de rebond (en ms)
+
+    // Calcul du mouvement vertical basé sur une sinusoïde (rebond constant)
+    const yPosition = bounceHeight * Math.abs(Math.sin((elapsedTime / duration) * Math.PI * 2));
+
+    // Appliquer la position à l'élément
+    diplome.style.transform = `translateY(${yPosition}px)`;
+
+    // Continuer l'animation (rebond infini)
+    requestAnimationFrame(bounceAnimation);
+}
+
+// Démarrer l'animation en boucle une fois le DOM chargé
+document.addEventListener('DOMContentLoaded', () => {
+    requestAnimationFrame(bounceAnimation);
+});
+//////////////////  END   /////////////////////////
 
 
 // Footer 

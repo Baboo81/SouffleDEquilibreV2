@@ -118,13 +118,27 @@ header
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 1rem;
 }
 
 .formationIcon
 {
     width: 120px;
     height: auto;
+}
+
+/* Animation */
+.diplomeContainer
+{
+    text-align: center;
+    margin-top: -7%; /*Espace au dépard*/
+}
+
+#diplome
+{
+    width: 100px;
+    height: auto;
+    position: relative;
 }
 /* Section : mainContent END */
 
