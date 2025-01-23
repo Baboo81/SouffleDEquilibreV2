@@ -9,6 +9,7 @@
     --Grey : #D1D3E4;
     --Pink : #F2E6E9;
     --White : #FEF8F2;
+
 }
 
 html, body
@@ -26,23 +27,20 @@ html, body
 
 h1
 {
-    color: var(--Blue2);
     font-size: 3em;
+    color: var(--Blue2);
     font-weight: 100;
+}
+
+.blueFont
+{
+    color: var(--Blue);
 }
 
 .blueFontP
 {
     color: var(--Blue);
     font-size: 1.5em;
-    line-height: 1.6em;
-}
-
-.blueFontPBold
-{
-    color: var(--Blue);
-    font-size: 1.5em;
-    font-weight: bold;
     line-height: 1.6em;
 }
 
@@ -74,7 +72,7 @@ header
 
 .nav-link:hover
 {
-    color: var(--Violet);
+    color: black;
 }
 
 .sticky
@@ -84,52 +82,40 @@ header
 }
 /* END Header */
 
-
 /* Section : mainContent */
 .mainContent
 {
     height: 2000px;
-    margin-top: 10%;
+    margin-top: 13%;
 }
 
-.mainContent .lotusContent
+.mainContent .stonesContent
 {
     display: flex;
-    justify-content: center; /*Centrage horizontal*/
-    align-items: center; /*Centrage vertical*/
-    height: 100%; /*Remplissage du container*/
-}
-
-.Mixed
-{
-    max-width: 100%; /*Rend l'image responsive*/
-    height: auto; /*Conservation des proportions*/
-    margin: 0 auto; /*Centrer le svg ds son container*/
-    padding: 10px;
-}
-
-.titleWithIcon
-{
-    display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 3rem;
+    justify-items: center;
+    margin-top: 2rem;
 }
 
-.formationIcon
+.Stones
 {
-    width: 120px;
+    max-width: 100%;
     height: auto;
+    width: 300px;
 }
 /* Section : mainContent END */
 
-
 /* Footer */
-
 footer
 {
     height: 450px;
     background-color: var(--Violet);
+}
+
+h1
+{
+    color: var(--Blue2);
+    font-weight: 200;
 }
 
 h4
@@ -156,6 +142,13 @@ footer .pictoFacebook:hover
     transition: transform 330ms ease-in;
 }
 
+footer .webMasterLink
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--Blue);
+}
+
 #mapid
 {
     height: 200px;
@@ -178,23 +171,5 @@ footer .webMasterLink
 {
     text-decoration: none;
     font-weight: bold;
-    color: var(--Blue);
 }
-
-/*Media Queries*/
-
-/*  Global  */
-@media (max-width : 768px)
-{
-    .Mixed 
-    {
-        max-width: 80%;
-    }
-
-    .lotusContent
-    {
-        margin-top: 20px;
-    }
-}
-/*  END Global  */
-
+/* Footer END */
