@@ -108,6 +108,11 @@ header
     padding: 10px;
 }
 
+.mainContent .blocFormation
+{
+    margin-top: 10%;
+}
+
 .titleWithIcon
 {
     display: flex;

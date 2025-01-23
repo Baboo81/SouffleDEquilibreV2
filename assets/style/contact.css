@@ -72,7 +72,7 @@ header
 
 .nav-link:hover
 {
-    color: black;
+    color: var(--Violet);
 }
 
 .sticky
