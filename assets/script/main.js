@@ -27,7 +27,7 @@ function bounceAnimation(timestamp) {
     const elapsedTime = timestamp - startTime;
 
     // Paramètres de l'animation
-    const bounceHeight = 50; // Hauteur constante du rebond (en pixels)
+    const bounceHeight = 10; // Hauteur constante du rebond (en pixels)
     const duration = 5000; // Durée d'un cycle complet de rebond (en ms)
 
     // Calcul du mouvement vertical basé sur une sinusoïde (rebond constant)
