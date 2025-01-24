@@ -199,7 +199,7 @@ footer .webMasterLink
 
 /*Media Queries*/
 
-/*  Global  */
+/*  NavBar  */
 @media only screen and (min-width : 992px) and (max-width : 1104px)
 {
     .nav-link
@@ -234,10 +234,17 @@ footer .webMasterLink
         margin-bottom: 20px; /* Ajoute un espacement vertical entre le logo et le texte */
     }
 }
+
+@media only screen and (min-width : 0px) and (max-width : 1439px)
+{
+    .homeContent p
+    {
+        font-size: 1.5rem;
+    }
+}
 /*  END  Home  */
 
 /* Footer */
-
 @media only screen and (min-width : 0px) and (max-width : 800px)
 {
     footer

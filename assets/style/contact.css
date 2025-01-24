@@ -176,8 +176,30 @@ footer .webMasterLink
 
 /* Media Queries */
 
-/* Footer */
+/* NavBar */
+@media only screen and (min-width : 992px) and (max-width : 1104px)
+{
+    .nav-link
+    {
+        padding: 30px;
+        font-size: 1.2em;
+    }
+}
 
+@media only screen and (min-width : 300px) and (max-width : 991px)
+{
+    .navbar-collapse    {
+        background-color: black;
+        opacity: 80%;
+    }
+
+    .nav-link
+    {
+        color: var(--White);
+    }
+}
+
+/* Footer */
 @media only screen and (min-width : 0px) and (max-width : 800px)
 {
     footer
