@@ -85,7 +85,7 @@ header
 /* Section : mainContent */
 .mainContent
 {
-    height: 2000px;
+    height: 1000px;
     margin-top: 13%;
 }
 
@@ -196,6 +196,28 @@ footer .webMasterLink
     .nav-link
     {
         color: var(--White);
+    }
+}
+
+/*  mainContent*/
+@media only screen and (min-width : 0px) and (max-width : 1032px)
+{
+    .mainContent
+    {
+        height: 1400px;
+    }
+}
+
+@media only screen and (min-width : 0px) and (max-width : 746px)
+{
+    .mainContent h1
+    {
+        font-size: 2rem;
+    }
+
+    .mainContent p
+    {
+        font-size: 1.3rem;
     }
 }
 
