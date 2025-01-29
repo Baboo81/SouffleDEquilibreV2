@@ -28,7 +28,7 @@ html, body
 h1
 {
     font-size: 3em;
-    color: var(--Blue2);
+    color: var(--Blue) !important;
     font-weight: 100;
 }
 
