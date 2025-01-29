@@ -5,6 +5,7 @@
 {
     --Blue : #464E9F;
     --Blue2 : #2362B0;
+    --Beige : #F0EAD6;
     --Violet : #C3BED0;
     --Grey : #D1D3E4;
     --Pink : #F2E6E9;
@@ -14,6 +15,7 @@
 html, body
 {
     max-width: 100%;
+    min-width: 320px;
     font-family: "Bodoni Moda", serif;
     overflow-x: hidden;
     background-color: var(--Pink);
@@ -66,15 +68,24 @@ header
     font-size: 1.5em;
 }
 
-.navbar-toggler
-{
-    border: 1px solid var(--White);
+.navbar-collapse.show {
+    background-color: rgba(0, 0, 0, 0.8); /* Noir avec 80% d'opacité */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px; /* Ajoute de l’espace pour éviter que le menu soit trop collé */
+    z-index: 999; /* Assure que le fond passe au-dessus des autres éléments */
 }
 
-.navbar-toggler:hover
+.navbar-collapse.show .nav-link
 {
-    border-color: var(--Blue);
-    border : 1px solid var(--Blue);
+    color: var(--Beige);
+}
+
+.navbar-collapse.show .nav-link:hover
+{
+    color: var(--Blue);
 }
 
 .nav-link:hover
@@ -93,31 +104,52 @@ header
 /* Section : mainContent */
 .mainContent
 {
-    height: 2000px;
+    height: 1500px;
     margin-top: 10%;
+}
+
+.mainContent .lotusTextWrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
 }
 
 .mainContent .lotusContent
 {
-    display: flex;
-    justify-content: center; /*Centrage horizontal*/
-    align-items: center; /*Centrage vertical*/
-    height: 100%; /*Remplissage du container*/
+    width: 100px;
+    height: 100px;
 }
 
 .Mixed
 {
-    max-width: 100%; /*Rend l'image responsive*/
-    height: auto; /*Conservation des proportions*/
-    margin: 0 auto; /*Centrer le svg ds son container*/
-    padding: 10px;
-    height: 20rem;
-    width: 20rem;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
 }
 
 .mainContent .blocFormation
 {
-    margin-top: 10%;
+    text-align: start;
+}
+
+.mainContent .blocFormation ul
+{
+    padding-left: 0;
+}
+
+.mainContent .blocFormation li
+{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.mainContent .blocFormation li span 
+{
+    margin-right: 10px;
 }
 
 .titleWithIcon
@@ -125,7 +157,11 @@ header
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+}
+
+.diplomeContainer
+{
+    margin-right: 15px;
 }
 
 .formationIcon
@@ -133,6 +169,8 @@ header
     width: 120px;
     height: auto;
 }
+
+
 
 /* Animation */
 .diplomeContainer
@@ -238,15 +276,31 @@ footer .webMasterLink
 {
     .mainContent 
     {
-        height: 2500px;
+        height: 1800px;
     }
 }
 
-@media only screen and (min-width : 0px) and (max-width : 819px)
+@media only screen and (min-width : 445px) and (max-width : 819px)
 {
     .mainContent 
     {
-        height: 3000px;
+        height: 2000px;
+    }
+}
+
+@media only screen and (min-width : 343px) and (max-width : 444px)
+{
+    .mainContent 
+    {
+        height: 2400px;
+    }
+}
+
+@media only screen and (min-width : 0px) and (max-width : 343px)
+{
+    .mainContent 
+    {
+        height: 2600px;
     }
 }
 

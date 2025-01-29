@@ -5,6 +5,7 @@
 {
     --Blue : #464E9F;
     --Blue2 : #2362B0;
+    --Beige : #F0EAD6;
     --Violet : #C3BED0;
     --Grey : #D1D3E4;
     --Pink : #F2E6E9;
@@ -14,6 +15,7 @@
 html, body
 {
     max-width: 100%;
+    min-width: 320px;
     font-family: "Bodoni Moda", serif;
     overflow-x: hidden;
     background-color: var(--Pink);
@@ -27,6 +29,11 @@ html, body
 h1
 {
     font-size: 3em;
+}
+
+.blueFont
+{
+    color: var(--Blue);
 }
 
 .blueFontP
@@ -51,15 +58,25 @@ header
     font-size: 1.5em;
 }
 
-.navbar-toggler
-{
-    border: 1px solid var(--White);
+
+.navbar-collapse.show {
+    background-color: rgba(0, 0, 0, 0.8); /* Noir avec 80% d'opacité */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px; /* Ajoute de l’espace pour éviter que le menu soit trop collé */
+    z-index: 999; /* Assure que le fond passe au-dessus des autres éléments */
 }
 
-.navbar-toggler:hover
+.navbar-collapse.show .nav-link
 {
-    border-color: var(--Blue);
-    border : 1px solid var(--Blue);
+    color: var(--Beige);
+}
+
+.navbar-collapse.show .nav-link:hover
+{
+    color: var(--Blue);
 }
 
 .nav-link:hover
@@ -84,7 +101,7 @@ header
 
 .mainContent
 {
-    height: 1500px;
+    height: 1800px;
     margin-top: 10%;
     padding: 30px 0;
 }
@@ -196,13 +213,38 @@ footer .webMasterLink
 }
 
 /* mainContent */
-@media only screen and (min-width : 0px) and (max-width : 1404px)
+@media only screen and (min-width : 1000px) and (max-width : 1399px)
 {
     .mainContent
     {
-        height: 2500px;
+        height: 2000px;
     }
 }
+
+@media only screen and (min-width : 800px) and (max-width : 999px)
+{
+    .mainContent
+    {
+        height: 2100px;
+    }
+}
+
+@media only screen and (min-width : 600px) and (max-width : 799px)
+{
+    .mainContent
+    {
+        height: 2200px;
+    }
+}
+
+@media only screen and (min-width : 0px) and (max-width : 599px)
+{
+    .mainContent
+    {
+        height: 2400px;
+    }
+}
+
 
 @media only screen and (min-width : 992px) and (max-width : 1399px)
 {
@@ -212,12 +254,21 @@ footer .webMasterLink
     }
 }
 
-@media only screen and (min-width : 0px) and (max-width : 699px)
+@media only screen and (min-width : 414px) and (max-width : 699px)
 {
     .mainContent .plumeImg
     {
-        height: 32em;
-        width: 32em;
+        height: 30em;
+        width: 30em;
+    }
+}
+
+@media only screen and (min-width : 0px) and (max-width : 415px)
+{
+    .mainContent .plumeImg
+    {
+        height: 22em;
+        width: 22em;
     }
 }
 
@@ -236,7 +287,7 @@ footer .webMasterLink
         font-size: 2rem;
     }
 
-    .mainContent p
+    .mainContent p li
     {
         font-size: 1.3rem;
     }

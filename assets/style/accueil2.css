@@ -14,6 +14,7 @@
 html, body
 {
     max-width: 100%;
+    min-width: 320px;
     font-family: "Bodoni Moda", serif;
     overflow-x: hidden;
     background-color: var(--Pink);
@@ -56,15 +57,24 @@ header
     font-size: 1.5em;
 }
 
-.navbar-toggler
-{
-    border: 1px solid var(--White);
+.navbar-collapse.show {
+    background-color: rgba(0, 0, 0, 0.8); /* Noir avec 80% d'opacité */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px; /* Ajoute de l’espace pour éviter que le menu soit trop collé */
+    z-index: 999; /* Assure que le fond passe au-dessus des autres éléments */
 }
 
-.navbar-toggler:hover
+.navbar-collapse.show .nav-link
 {
-    border-color: var(--Blue);
-    border : 1px solid var(--Blue);
+    color: var(--Beige);
+}
+
+.navbar-collapse.show .nav-link:hover
+{
+    color: var(--Blue);
 }
 
 .nav-link:hover
